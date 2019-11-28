@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7B98C394238FC49E00F05F8D /* PersonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B98C393238FC49E00F05F8D /* PersonTableViewCell.swift */; };
+		7B98C396238FC66000F05F8D /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B98C395238FC66000F05F8D /* Constants.swift */; };
+		7B98C398238FC7AB00F05F8D /* PersonDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B98C397238FC7AB00F05F8D /* PersonDetailViewController.swift */; };
 		7BBDE91E238E762C00A1ECB0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BBDE91D238E762C00A1ECB0 /* AppDelegate.swift */; };
 		7BBDE920238E762C00A1ECB0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BBDE91F238E762C00A1ECB0 /* SceneDelegate.swift */; };
 		7BBDE922238E762C00A1ECB0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BBDE921238E762C00A1ECB0 /* ViewController.swift */; };
@@ -16,6 +19,10 @@
 		7BBDE92D238E762D00A1ECB0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BBDE92B238E762D00A1ECB0 /* LaunchScreen.storyboard */; };
 		7BBDE938238E762D00A1ECB0 /* SilentPushTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BBDE937238E762D00A1ECB0 /* SilentPushTestTests.swift */; };
 		7BBDE943238E762D00A1ECB0 /* SilentPushTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BBDE942238E762D00A1ECB0 /* SilentPushTestUITests.swift */; };
+		7BBDE951238E766000A1ECB0 /* Core.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BBDE950238E766000A1ECB0 /* Core.swift */; };
+		7BBDE953238E767200A1ECB0 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BBDE952238E767200A1ECB0 /* Extensions.swift */; };
+		7BBDE955238E772300A1ECB0 /* Webservice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BBDE954238E772200A1ECB0 /* Webservice.swift */; };
+		7BBDE957238E792500A1ECB0 /* DecodablePerson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BBDE956238E792500A1ECB0 /* DecodablePerson.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +43,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7B98C393238FC49E00F05F8D /* PersonTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonTableViewCell.swift; sourceTree = "<group>"; };
+		7B98C395238FC66000F05F8D /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		7B98C397238FC7AB00F05F8D /* PersonDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonDetailViewController.swift; sourceTree = "<group>"; };
 		7BBDE91A238E762C00A1ECB0 /* SilentPushTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SilentPushTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7BBDE91D238E762C00A1ECB0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7BBDE91F238E762C00A1ECB0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -51,6 +61,11 @@
 		7BBDE93E238E762D00A1ECB0 /* SilentPushTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SilentPushTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7BBDE942238E762D00A1ECB0 /* SilentPushTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SilentPushTestUITests.swift; sourceTree = "<group>"; };
 		7BBDE944238E762D00A1ECB0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7BBDE950238E766000A1ECB0 /* Core.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Core.swift; sourceTree = "<group>"; };
+		7BBDE952238E767200A1ECB0 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		7BBDE954238E772200A1ECB0 /* Webservice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Webservice.swift; sourceTree = "<group>"; };
+		7BBDE956238E792500A1ECB0 /* DecodablePerson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecodablePerson.swift; sourceTree = "<group>"; };
+		7BBDE958238E7F1600A1ECB0 /* SilentPushTest.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SilentPushTest.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,9 +116,17 @@
 		7BBDE91C238E762C00A1ECB0 /* SilentPushTest */ = {
 			isa = PBXGroup;
 			children = (
+				7BBDE958238E7F1600A1ECB0 /* SilentPushTest.entitlements */,
 				7BBDE91D238E762C00A1ECB0 /* AppDelegate.swift */,
 				7BBDE91F238E762C00A1ECB0 /* SceneDelegate.swift */,
 				7BBDE921238E762C00A1ECB0 /* ViewController.swift */,
+				7B98C397238FC7AB00F05F8D /* PersonDetailViewController.swift */,
+				7B98C393238FC49E00F05F8D /* PersonTableViewCell.swift */,
+				7BBDE956238E792500A1ECB0 /* DecodablePerson.swift */,
+				7BBDE950238E766000A1ECB0 /* Core.swift */,
+				7BBDE952238E767200A1ECB0 /* Extensions.swift */,
+				7B98C395238FC66000F05F8D /* Constants.swift */,
+				7BBDE954238E772200A1ECB0 /* Webservice.swift */,
 				7BBDE923238E762C00A1ECB0 /* Main.storyboard */,
 				7BBDE929238E762D00A1ECB0 /* Assets.xcassets */,
 				7BBDE92B238E762D00A1ECB0 /* LaunchScreen.storyboard */,
@@ -263,8 +286,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				7BBDE922238E762C00A1ECB0 /* ViewController.swift in Sources */,
+				7BBDE955238E772300A1ECB0 /* Webservice.swift in Sources */,
+				7BBDE953238E767200A1ECB0 /* Extensions.swift in Sources */,
+				7B98C398238FC7AB00F05F8D /* PersonDetailViewController.swift in Sources */,
+				7B98C394238FC49E00F05F8D /* PersonTableViewCell.swift in Sources */,
 				7BBDE91E238E762C00A1ECB0 /* AppDelegate.swift in Sources */,
+				7B98C396238FC66000F05F8D /* Constants.swift in Sources */,
 				7BBDE928238E762C00A1ECB0 /* SilentPushTest.xcdatamodeld in Sources */,
+				7BBDE951238E766000A1ECB0 /* Core.swift in Sources */,
+				7BBDE957238E792500A1ECB0 /* DecodablePerson.swift in Sources */,
 				7BBDE920238E762C00A1ECB0 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -438,6 +468,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SilentPushTest/SilentPushTest.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6ZL797GF7H;
 				INFOPLIST_FILE = SilentPushTest/Info.plist;
@@ -456,6 +487,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SilentPushTest/SilentPushTest.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6ZL797GF7H;
 				INFOPLIST_FILE = SilentPushTest/Info.plist;
