@@ -58,10 +58,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
     }
     
     func application(_ application: UIApplication, didReceiveRemoteNotification userInfo: [AnyHashable : Any], fetchCompletionHandler completionHandler: @escaping (UIBackgroundFetchResult) -> Void) {
+        self.scheduleLocalNotification()
+
         fetchBackgroundData { (result) in
             completionHandler(result)
         }
     }
+    
+    
     
     private func fetchBackgroundData(completion: @escaping (UIBackgroundFetchResult) -> ()) {
         let url = "http://demo6427581.mockable.io/"
@@ -69,14 +73,21 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
             switch result {
             case .success(let objects):
                 self.makeObjectsFromDictionary(dict: objects)
-                //DispatchQueue.main.async {
-                    //_ = objects.map { $0.toPersonEntity() }
-                //}
                 completion(.newData)
             case .failure(_):
                 completion(.failed)
             }
         }
+    }
+    
+    func scheduleLocalNotification() {
+        let content = UNMutableNotificationContent()
+        content.title = "Notification Tutorial"
+        content.subtitle = "from ioscreator.com"
+        content.body = " Notification triggered"
+        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 5, repeats: false)
+        let request = UNNotificationRequest(identifier: "notification.id.01", content: content, trigger: trigger)
+        UNUserNotificationCenter.current().add(request, withCompletionHandler: nil)
     }
     
     func makeObjectsFromDictionary(dict: [[String: Any]]) {
@@ -106,21 +117,21 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
     
     @available(iOS 10.0, *)
     func userNotificationCenter(_ center: UNUserNotificationCenter, willPresent notification: UNNotification, withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Void) {
-        completionHandler([])
+        completionHandler([.alert, .sound])
     }
     
-    @available(iOS 10.0, *)
-    func userNotificationCenter(_ center: UNUserNotificationCenter, didReceive response: UNNotificationResponse, withCompletionHandler completionHandler: @escaping () -> Void) {
-//        switch response.actionIdentifier {
-//        case UNNotificationDismissActionIdentifier:
-//            break
-//        case UNNotificationDefaultActionIdentifier:
-//            break
-//        default:
-//            break
-//        }
-        completionHandler()
-    }
+//    @available(iOS 10.0, *)
+//    func userNotificationCenter(_ center: UNUserNotificationCenter, didReceive response: UNNotificationResponse, withCompletionHandler completionHandler: @escaping () -> Void) {
+////        switch response.actionIdentifier {
+////        case UNNotificationDismissActionIdentifier:
+////            break
+////        case UNNotificationDefaultActionIdentifier:
+////            break
+////        default:
+////            break
+////        }
+//        completionHandler()
+//    }
     
     // MARK: - Core Data stack
 
